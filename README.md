@@ -1,5 +1,20 @@
 README
 
+HOW TO RUN:
+
+Execute app in terminal with 
+ ```
+python app.py
+ ```
+Send POST request with curl:
+ ```
+curl -X POST -H "Content-Type: application/json" -d '{
+    "data_path": "mydata.csv",
+    "predictor_value": "name_of_predictor_value"
+}' http://127.0.0.1:5000/forecast
+ ```
+
+
 ## Data Exploration and Cleaning
 - Started to look at data see how I could clean it and impute it
 - Took a look at numeric and non numeric data
@@ -40,6 +55,8 @@ If I had more time I would have done a lot of things a little differently, here 
 - Probably done some outlier analysis, maybe there are some errors in data, really large values where there shouldn't be.
 - Spent more time on finding a better way of splitting data in training and test set, decided on leaving the last 24 hours as test sets since description asked for prediction on next 24 hours. Thinking about it now it was maybe meant to predict on the next unseen 24 hours.
 - One mistake I did was using default splits on the cross validated time series data. Thinking about it now it would make more sense to have the validation set to be 24 hours of data like the test set.
+- Another thing is handling errors, there are almost no error handling methods in any of the functions. Like if input is wrong or something we should return a error.
+- Related to that is creating the functions a little better. The function should be created so that the inputs should have a specific type, same with what the function returns the variables it returns shuold be of specific types like a dataframe or a value.
 - Another thing I would have liked to spend more time on is model evaluation. See how well we are predicting on the test set by calculating root squared mean error of test set and real data and see how well it predicts.
 - Last thing is packaging the solution so the user doesn't have to have the packages installed. Create a `requirements.txt` file with the listed packages and a `Dockerfile` with the installed packages. That way the user can run it more smoothly.
 
