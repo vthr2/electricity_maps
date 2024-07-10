@@ -60,4 +60,31 @@ If I had more time I would have done a lot of things a little differently, here 
 - Another thing I would have liked to spend more time on is model evaluation. See how well we are predicting on the test set by calculating root squared mean error of test set and real data and see how well it predicts.
 - Last thing is packaging the solution so the user doesn't have to have the packages installed. Create a `requirements.txt` file with the listed packages and a `Dockerfile` with the installed packages. That way the user can run it more smoothly.
 
+## Prediction output
+|    datetime           |   forecasted_carbon_intensity_avg  |
+|-----------------------|-----------------------|
+| 2019-09-25 09:00:00+00:00 |         249.232211   |
+| 2019-09-25 10:00:00+00:00 |         242.928229   |
+| 2019-09-25 11:00:00+00:00 |         241.732926   |
+| 2019-09-25 12:00:00+00:00 |         241.179222   |
+| 2019-09-25 13:00:00+00:00 |         237.526886   |
+| 2019-09-25 14:00:00+00:00 |         269.073713   |
+| 2019-09-25 15:00:00+00:00 |         264.069761   |
+| 2019-09-25 16:00:00+00:00 |         252.752664   |
+| 2019-09-25 17:00:00+00:00 |         257.587545   |
+| 2019-09-25 18:00:00+00:00 |         240.653033   |
+| 2019-09-25 19:00:00+00:00 |         197.758127   |
+| 2019-09-25 20:00:00+00:00 |         185.663735   |
+| 2019-09-25 21:00:00+00:00 |         192.682908   |
+| 2019-09-25 22:00:00+00:00 |         221.126653   |
+| 2019-09-25 23:00:00+00:00 |         226.843506   |
+| 2019-09-26 00:00:00+00:00 |         270.093925   |
+| 2019-09-26 01:00:00+00:00 |         266.141376   |
+| 2019-09-26 02:00:00+00:00 |         277.083526   |
+| 2019-09-26 03:00:00+00:00 |         268.697283   |
+| 2019-09-26 04:00:00+00:00 |         233.042826   |
+| 2019-09-26 05:00:00+00:00 |         258.211519   |
+| 2019-09-26 06:00:00+00:00 |         298.617761   |
+| 2019-09-26 07:00:00+00:00 |         298.894551   |
+| 2019-09-26 08:00:00+00:00 |         286.880666   |
 
