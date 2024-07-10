@@ -32,14 +32,15 @@ README
 
 ## Afterthougts
 - If I had more time I would have done a lot of things a little differently, here are my main thougts:
-Spent more time on exploratory data anlaysis, plot how data looks like to find a better way to impute missing values
-Probably done some outlier analysis, maybe there are some errors in data, really large values where there shouldn't be.
-Spent more time on finding a better way of splitting data in training and test set, decided on leaving the last 24 hours as test sets
-since description asked for prediction on next 24 hours. Thinking about it now it was maybe meant to predict on the next unseen 24 hours.
-One mistake I did was using default splits on the cross validated time series data. Thinking about it now it would make more
-sense to have the validation set to be 24 hours of data like the test set.
-Another thing I would have liked to spend more time on is model evaluation. See how well we are predicting on the test set by calculating
-root squared mean error of test set and real data and see how well it predicts.
-Last thing is packaging the solution so the user doesn't have to have the packages installed.
-Create a requirements.txt file with the listed packages and a Dockerfile with the installed packages. That way the user can run it more smoothly
+## Afterthoughts
+
+If I had more time I would have done a lot of things a little differently, here are my main thoughts:
+
+- Spent more time on exploratory data analysis, plot how data looks like to find a better way to impute missing values.
+- Probably done some outlier analysis, maybe there are some errors in data, really large values where there shouldn't be.
+- Spent more time on finding a better way of splitting data in training and test set, decided on leaving the last 24 hours as test sets since description asked for prediction on next 24 hours. Thinking about it now it was maybe meant to predict on the next unseen 24 hours.
+- One mistake I did was using default splits on the cross validated time series data. Thinking about it now it would make more sense to have the validation set to be 24 hours of data like the test set.
+- Another thing I would have liked to spend more time on is model evaluation. See how well we are predicting on the test set by calculating root squared mean error of test set and real data and see how well it predicts.
+- Last thing is packaging the solution so the user doesn't have to have the packages installed. Create a `requirements.txt` file with the listed packages and a `Dockerfile` with the installed packages. That way the user can run it more smoothly.
+
 
