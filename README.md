@@ -4,7 +4,7 @@ HOW TO RUN:
 
 Execute app in terminal with 
  ```
-python app.py
+python3 app.py
  ```
 Send POST request with curl:
  ```
